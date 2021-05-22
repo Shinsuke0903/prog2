@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>kanly</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/sample.css">
+    </head> 
+    <body>
+        <header>
+            <h1>Kanly(食後血糖値管理アプリ)(仮)</h1>
+        </header>
+        <main>
+            <div class="top-wrapper">
+                <!-- 食べたものの入力箇所作成 -->
+                <div class="top-wrapper1">
+                    <div class="kanly-date">
+                        <input type="date" name="date" id="today">
+                    </div>
+                    <div class="kanly-food">
+                        <p>食べたものを入力</p>
+                        <input type="text" id="key">
+                    </div>
+                    <!-- 食後血糖値の入力箇所作成 -->
+                    <div class="kanly-keto">
+                        <p>食後血糖値を入力</p>
+                        <input type="number" id="memo">   
+                    </div>
+                    <div class="active">
+                        <div class="active1">
+                            <a href="#" class="btn-right-radius" id="save">Save</a>
+                            <a href="#" class="btn-right-radius" id="clear">Clear</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ニュースクリッピング部分 ------->
+                <div class="top-wrapper2"> 
+                    <p class="daimei">気になる記事を保存しておこう！</p>
+                    <div class="kanlysub">
+                        <p>題名メモ</p>
+                        <input type="text" id="sub">
+                    </div>
+                    <div class="kanlyinfo">
+                        <p>ニュースURL</p>
+                        <input type="text" id="info">
+                    </div>
+                    <!-- ニュースクリッピングの保存と消去-->
+                    <div class="activea">
+                        <div class="active2">
+                            <a href="#" class="btn-right-radius" id="subjection">Save</a>
+                            <a href="#" class="btn-right-radius" id="information">Clear</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ana">
+                <!-- 分析開始ボタン -->
+                <div class="container1">
+                    <a href="#" class="btn-gradation" id="analysis">分析開始!</a>
+                </div>
+            </div>
+            <div class="middle-wrapper">
+                <div class="middle-wrapper1"> 
+                    <div class="today-menu">
+                        <p class="today-text">今日の結果</p>
+                        <p id="today-data"></p>
+                        <p id="today-data2"></p>
+                        <p id="today-data3"></p>
+                    </div>
+                    <div class="yesterday">
+                        <p class="yesterday-text">前回の結果</p>
+                        <p id="yesterday-data">
+                        <!-- ここに昨日のデータが挿入される -->
+                        </p>
+                        <p id="yesterday-data2"></p>
+                        <p id="yesterday-data3"></p>
+                    </div>
+                    <div class="avediv" id="avemax">
+                        <p class="ave-text">これまでの血糖値の平均</p>  
+                        <div class="ave-week">
+                        </div> <!-- ここに過去一週間分のデータが挿入される -->
+                    </div>
+                </div>
+                <div class="middle-wrapper2">
+                    <div class="onebox"> 
+                        <p class="low-text">低血糖値ベスト3</p>
+                        <div class="low">
+                            <div class="first1">
+                                <p class="top1">①</p>
+                                <p id="low1"></p>
+                                <p id="lowa"></p>
+                            </div>
+                            <div class="second1">
+                                <p class="top2">②</p>
+                                <p id="low2"></p>
+                                <p id="lowb"></p>
+                            </div>
+                            <div class="third1">
+                                <p class="top3">③</p>
+                                <p id="low3"></p>
+                                <p id="lowc"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="twobox">
+                        <p class="high-text">高血糖値ワースト3</p>
+                        <div class="high">
+                            <div class="first2">
+                                <p class="top4">①</p>
+                                <p id="high1"></p>
+                                <p id="higha"></p>
+                            </div>
+                            <div class="second2">
+                                <p class="top5">②</p>
+                                <p id="high2"></p>
+                                <p id="highb"></p>
+                            </div>
+                            <div class="third2">
+                                <p class="top6">③</p>
+                                <p id="high3"></p>
+                                <p id="highc"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-wrapper">
+                <table id="list">
+                    <!-- ここに全てのデータが挿入される -->
+                </table>
+            </div>
+        </main>
+        <footer><small>Metalife</small></footer>
+        <!-- モーダル部分を書いていく -->
+        <!-- 良い -->
+        <div id="modal1" class="modalgood">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- モーダルを閉じるボタン -->
+                    <div class="batsu">
+                        <input type="button" id="closeBtn1" value="×"> 
+                    </div>
+                    <div class="good">
+                        <h1>その調子です！</h1>
+                        <p>血糖値がこれまでの平均より小さいです<br>ぜひ、食べた食事をメモしておきましょう</p> 
+                        <img src="./image/6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- あかん -->
+        <div id="modal2" class="modalbad">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- モーダルを閉じるボタン -->
+                    <div class="batsu">
+                        <input type="button" id="closeBtn2" value="×"> 
+                    </div>
+                <div class="bad">
+                    <h1>気をつけましょう！</h1>
+                    <p>血糖値がこれまでの平均より大きいです<br>家の掃除、ゴミ出しなどで体を動かしましょう</p>
+                    <img src="./image/5.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/action.js"></script>
+    </body>
+</html>

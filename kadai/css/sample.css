@@ -1,0 +1,672 @@
+/* bodyの設定 */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 32px;
+  width: 100%;
+}
+/* ヘッダーの設定 */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  height: 40px;
+  padding-top:4px; 
+}
+header h1{
+  font-size:35px;
+}
+h1 {
+  font-size: 100%;
+}
+/* 中身の設定 */
+main {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  background-image:url(../image/large.png);
+  background-color:rgba(255,255,255,0.7);
+  background-blend-mode:lighten;
+  margin-top:0px;
+}
+/* フッターの設定 */
+footer {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: gray;
+}
+p {
+  font-size: 200%;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  height: 200px;
+}
+ul {
+  padding: 0;
+  border-top: 1px solid #000000;
+  display: table; /* 定義 */
+  table-layout: fixed;
+  width: 30%;
+  font-size: 80%;
+  margin: 0 3%;
+  text-align: center;
+  margin: auto;
+}
+li {
+  list-style-type: none;
+  border: 1px solid #666;
+  background-color: #fff;
+  display: table-cell; /* 定義 */
+  cursor: pointer;
+  color: #0d7dfd;
+}
+li:hover {
+  background: #0d7dfd;
+  color: #fff;
+}
+textarea {
+  margin: 10px 3%;
+  width: 95%;
+  height: 100px;
+  font-size: 80%;
+  box-shadow: 3px 3px 3px 3px #555;
+  background-color: rgb(241, 239, 239);
+}
+#key {
+  margin: 0 3%;
+  width: 95%;
+  font-size: 80%;
+  background-color: #e1efff;
+}
+table {
+  margin: 20px 3%;
+  border: 1px solid #8dc3f5;
+  width: 96%;
+}
+th {
+  width: 30%;
+  font-size: 24px;
+  background-color: #d0e7fc;
+  border-bottom: 1px solid #8dc3f5;
+}
+td {
+  font-size: 16px;
+  background-color: rgb(241, 239, 239);
+  border-bottom: 1px solid #8dc3f5;
+}
+input {
+  margin: 10px 3%;
+  width: 95%;
+  height: 40px;
+  font-size: 80%;
+}
+#sub{
+  margin: 0 3%;
+  width: 40%;
+  font-size: 80%;
+  background-color: #e1efff;
+  margin-left: 90px;
+}
+#info{
+  margin: 0 3%;
+  width: 70%;
+  font-size: 80%;
+  background-color: #e1efff;
+}
+/* 入力部分を設定する */
+.top-wrapper{
+  width: 100%;
+  margin:5px auto;
+  display: flex;
+}
+.kanly-date{
+  width: 500px;
+  font-size:20px;
+  height: 60px;
+  text-align: center;
+  margin: 0 auto;
+}
+#today{
+  width: 200px;
+  height: 50px;
+  font-size:20px;
+}
+.kanly-food{
+  display: flex;
+  width: 500px;
+  margin:0 auto;
+  margin-top: 20px;
+  height: 70px;
+}
+.kanly-food p{
+  width: 200px;
+  font-size:23px;
+  height: 60px;
+  padding-top: 18px;
+}
+.kanly-keto{
+  display: flex;
+  width: 500px;
+  margin:auto;
+  height: 70px;
+}
+.kanly-keto p{
+  width: 200px;
+  font-size:23px;
+  height: 60px;
+  padding-top: 26px;
+}
+.top-wrapper1{
+  width:40%;
+  border:2px solid lightgray ;
+  margin-left:130px;
+  background-color: white;
+  border-radius: 20px;
+}
+/* ニュースクリッピング部分 */
+.top-wrapper2{
+  width:40%;
+  font-size:20px;
+  border:2px solid lightgray ;
+  background-color: white;
+  border-radius: 20px;
+  margin-left:20px;
+}
+.daimei{
+  font-size:23px;
+  height:40px;
+  padding-top:20px;
+  width:80%;
+  margin:auto;
+}
+.kanlysub{
+  height: 70px;
+  display: flex;
+  width:80%;
+  margin:auto;
+  margin-top: 25px;
+}
+.kanlysub p{
+  font-size:23px;
+  height:30px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.kanlyinfo{
+  height: 55px;
+  display: flex;
+  width:80%;
+  margin:auto;
+  margin-top: 10px;
+}
+.kanlyinfo p{
+  font-size:23px;
+  height:50px;
+}
+/* 保存ボタン、消去ボタンの設定をする */
+#key{
+  width: 200px;
+  background-color:#C2EEFF;
+  border:1px solid lightgray;
+  height: 50px;
+}
+#memo{
+  width: 200px;
+  height: 50px;
+  background-color:#C2EEFF;
+  border:1px solid lightgray;
+}
+.active{
+  width:300px;
+  margin:10px auto;
+}
+.activea{
+  width:300px;
+  margin:10px auto;
+  margin-left:180px;
+}
+.active1{
+  text-align: center;
+  width:300px;
+}
+.active2{
+  text-align: center;
+  width:300px;
+  height: 50px;
+  font-size: 32px;
+}
+#subjection{
+  height:32px;
+}
+#information{
+  height:32px;
+}
+#clear{
+  margin-left: 10px;
+}
+.btn-right-radius {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #00BCD4;
+  background: #ECECEC;
+  border-radius: 0 15px 15px 0;
+  transition: .4s;
+}
+.btn-right-radius:hover {
+  background: #636363;
+}
+/* 分析ボタンの設定をする */
+.btn-gradation {
+  display: inline-block;
+  width: 180px;
+  text-align: center;
+  font-size: 16px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-image: linear-gradient(-90deg, blue, lightblue);
+  transition: .5s;
+  background-size: 200%;
+}
+.btn-gradation:hover {
+  background-position: right center;
+}
+/* ニュースクリッピングの方 */
+.btn-right-radius {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #00BCD4;
+  background: #ECECEC;
+  border-radius: 0 15px 15px 0;
+  transition: .4s;
+}
+.btn-right-radius:hover {
+  background: #636363;
+}
+/* 分析ボタンの設定をする */
+.btn-gradation {
+  display: inline-block;
+  width: 180px;
+  text-align: center;
+  font-size: 16px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-image: linear-gradient(-90deg, blue, lightblue);
+  transition: .5s;
+  background-size: 200%;
+}
+.btn-gradation:hover {
+  background-position: right center;
+}
+.ana{
+  width: 40%;
+  margin:0 auto;
+  margin-top:3px;
+  margin-bottom:3px;
+  height:60px;
+  display:flex;
+}
+#analysis {
+  list-style-type: none;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  cursor: pointer;
+  height:30px;
+  font-size:30px;
+  width:100%;
+}
+.container1{
+  margin: auto;
+  width:40%;
+}
+/* 分析結果の設定をする */
+.middle-wrapper{
+  font-size:15px;
+  text-align: center;
+  height: 380px;
+}
+.middle-wrapper1{
+  display: flex;
+  width:80%;
+  margin:auto;
+  height: 200px;
+}
+/* 今日入力したものの設定をする */
+.today-menu{
+  width:31%;
+  background-color: white;
+  height:200px;
+  border-radius: 15px;
+}
+.today-text{
+  padding-top: 8px;
+  height:40px;
+  background-color:#C2EEFF;
+  border-radius: 10px 10px 0px 0px;
+}
+#today-data{
+  height: 40px;
+}
+#today-data2{
+  height: 40px;
+}
+#today-data3{
+  height: 70px;
+  font-family:"Let's go Digital";
+  font-size:70px;
+}
+/* 昨日入力したものの設定をする */
+.yesterday{
+  width:31%;
+  background-color: white;
+  height:200px;
+  border-radius: 15px;
+  margin-left: 45px;
+}
+.yesterday-text{
+  padding-top: 8px;
+  height:40px;
+  background-color:#C2EEFF;
+  border-radius: 10px 10px 0px 0px;
+}
+#yesterday-data{
+  height: 40px;
+}
+#yesterday-data2{
+  height: 40px;
+}
+#yesterday-data3{
+  height: 70px;
+  font-family:"Let's go Digital";
+  font-size:70px;
+}
+/* これまでの血糖値の平均値の設定をする */
+.avediv{
+  width:31%;
+  font-size:70px;
+  height:200px;
+  font-family:"Let's go Digital";
+  background-color: white;
+  margin-left: 45px;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.avediv:hover{
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+.ave-text{
+  height:40px;
+  padding-top: 8px;
+  font-size:30px;
+  background-color:#C2EEFF;
+  border-radius: 10px 10px 0px 0px;
+}
+.ave-week{
+  padding-top: 30px;
+  font-size:100px;
+  color: #0ff;
+}
+/* 糖質量ランキングベスト3を設定する */
+/* 糖質量の低いものを設定する */
+.middle-wrapper2{
+  width:95%;
+  margin:auto;
+  margin-top:10px;
+  display: flex;
+}
+.onebox{
+  width:47%;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 21px;
+}
+.low-text{
+  height:40px;
+  background-color:#C2EEFF;
+  border-radius: 10px 10px 0px 0px;
+  padding-top: 8px;
+}
+.low{
+  display: flex;
+  height:130px;
+}
+.first1{
+  width:33%;
+  height:130px;
+}
+.top1{
+  height: 30px;
+}
+#low1{
+  margin-top: 2px;
+  height: 30px;
+  font-size: 30px;
+}
+#lowa{
+  height: 70px;
+  font-size:70px;
+  color:  #00BCD4;
+  font-family:"Let's go Digital";
+}
+.second1{
+  width:34%;
+  height:130px;
+}
+.top2{
+  height: 30px;
+}
+#low2{
+  font-size: 30px;
+  height: 30px;
+}
+#lowb{
+  height: 70px;
+  font-size:70px;
+  color:  #00BCD4;
+  font-family:"Let's go Digital";
+}
+.third1{
+  width:33%;
+  height:130px;
+}
+.top3{
+  height: 30px;
+}
+#low3{
+  height: 30px;
+}
+#lowc{
+  height: 70px;
+  font-size:70px;
+  color:  #00BCD4;
+  font-family:"Let's go Digital";
+}
+/* 糖質量の高いもののランキングワースト3を設定する */
+.twobox{
+  width:47%;
+  background-color: white;
+  margin-left: 40px;
+  border-radius: 15px;
+}
+.high-text{
+  height:40px;
+  margin-top:0px;
+  background-color:#C2EEFF;
+  border-radius: 10px 10px 0px 0px;
+  padding-top: 8px;
+}
+.high{
+  display: flex;
+}
+.first2{
+  width:33%;
+  height:130px;
+}
+.top4{
+  height: 30px;
+}
+#high1{
+  height: 30px;
+}
+#higha{
+  height: 70px;
+  font-size:70px;
+  color: blue;
+  font-family:"Let's go Digital";
+}
+.second2{
+  width:34%;
+  height:130px;
+}
+.top5{
+  height: 30px;
+}
+#high2{
+  height: 30px;
+}
+#highb{
+  height: 70px;
+  font-size:70px;
+  color: blue;
+  font-family:"Let's go Digital";
+}
+.third2{
+  width:33%;
+  height: 130px;
+}
+.top6{
+  height: 30px;
+}
+#high3{
+  height: 30px;
+}
+#highc{
+  height: 70px;
+  color: blue;
+  font-family:"Let's go Digital";
+  font-size:70px;
+}
+/* モーダル部分の設定を指定する */
+.modalgood{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  }
+  .modalgood p{
+    text-align: center;
+  }
+  .modalgood h1 {
+    text-align: center;
+    margin-top:100px;
+  }
+  .modalbad{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  }
+  .batsu{
+    width:40px;
+    float:right;
+    margin-right:30px;
+  }
+  .modalbad p{
+    text-align: center;
+    border:1px solid red;
+  }
+  .modalbad h1{
+    text-align: center;
+  }
+  .modal-content{
+  background-color: white;
+  width: 500px;
+  margin: 10% auto;
+  border-radius: 20px;
+  height: 400px;
+  }
+  #closeBtn1{
+    width:40px;
+    color: #00BCD4;
+    float:right;
+  }
+  #closeBtn2{
+    width:40px;
+    color: #00BCD4;
+    float:right;
+  }
+  .modal-body p{
+    font-size:30px;
+  }
+.good{
+  padding-top:20px;
+  height:400px; 
+}
+.good h1{
+  width:80%;
+  margin:auto;
+  margin-top:20px;
+}
+.good p{
+  font-size: 20px;
+  margin-top:40px;
+  margin-bottom: 20px;
+  text-align: center;
+  height:40px;
+}
+.good img{
+  height:200px;
+  width:250px;
+  margin-left: 120px;
+}
+.bad{
+  padding-top:20px;
+  height:100px;
+}
+.bad h1{
+  width:80%;
+  margin:auto;
+  margin-top:20px;
+}
+.bad p{
+  font-size: 20px;
+  margin-top:40px;
+  margin-bottom: 20px;
+  text-align: center;
+  height:40px;
+}
+.bad img{
+  height:200px;
+  width:250px;
+  margin-left: 120px;
+}
